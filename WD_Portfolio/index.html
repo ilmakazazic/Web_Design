@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin-ext" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400i|Kalam&subset=latin-ext" rel="stylesheet"> 
+
+<link rel="stylesheet" type="text/css" href="style.css"> <!--css-->
+
+
+
+
+</head>
+
+
+
+<body>
+ 
+ 
+ <div id="nav">
+ 		 <ul class="left">
+    	<li><a href="#header">Home</a></li>
+        <li><a id="#a" href="#about">About me</a></li>
+          </ul>
+          
+          <ul class="right">
+        <li><a href="#webd">Web Designe</a></li>        	
+        <li><a  href="#ai">Illustrator</a></li>
+        <li><a href="#ps">Photoshop</a></li>
+       
+          </ul>   
+  
+    
+ 
+ 
+ </div>
+
+<div id="header">
+	<div id="h">
+    <h1 id="name">Ilma<br>KAZAZIĆ</h1>
+    <img src="img/prpr.png" alt=""/>
+<h2>Portfolio</h2>
+    </div>
+</div> <!--zatvoren header-->
+
+<div class="fade" id="about">
+	<div id="a" class="wrapper">
+    <h1>About me</h1>
+    <img src="img/ilmaK.jpg" alt="Ilma Kazazic"/>
+    <h2>Ilma Kazazić</h2>
+        <p>20 godina</p>
+        <p>Studentica Fakuteta informacijskih tehnologija</p>
+        <p>Bosna i Hercegovina, Sarajevo</p>
+     
+</div> 
+</div>
+
+
+
+
+<!--Photoshop radovi-->
+<div id="ps">
+	<div class="wrapper">	
+     <h1>Photoshop</h1>
+    <img src="img/Ps/nescafe.jpg"  alt="Nescafe"/>
+   
+    <img src="img/Ps/art_qoute.jpg" alt="Art citat"/>
+    <img src="img/Ps/VOGUE_GAGA_23752.jpg" alt="Lady Gaga naslovna strana"/>
+<p>Radovi rađeni u sklopu kursa Adobe Photoshop CC</p>
+</div> 
+</div>
+
+
+
+
+<!--Illustrator radovi-->
+<div id="ai">
+	<div class="wrapper">	
+    	 <h1>Illustrator</h1>
+    	<img src="img/Ai/Baby_giraffe.jpg"  alt="Baby giraffe"/>
+      <img src="img/Ai/Matisse_La-pompadour.jpg" alt="Matisse La-pompadour"/>
+      <img src="img/Ai/Kolacic.jpg" alt="Kolačić"/>
+<p>Radovi rađeni u sklopu kursa Adobe Ilustrator CC</p>
+</div> 
+</div>
+
+
+
+<!--Web designe radovi-->
+<div id="webd">
+	<div class="wrapper">	
+    <h1>Web Designe</h1>
+    <img src="img/Dw/fashion.jpg" alt="Fashion site"/>
+    <img src="img/Dw/skijanje.jpg" alt="skijanje"/>
+    <p>Radovi rađeni u sklopu kurseva Adobe Dreamweaver CC</p>
+</div> 
+</div>
+
+
+
+
+<!--footer-->
+<div id="footer">
+	<div class="wrapper">
+		<p>Ilma Kazazić, FIT</p>
+</div> 
+</div>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+
+ <script>
+ 	$(window).scroll(function () {
+    var scrollTop = $(window).scrollTop();
+    var height = 75;
+    $('#h, #name').css({
+        'opacity': ((height - scrollTop) / height )
+    });
+});
+
+
+ </script>
+
+
+</body>
+</html>
